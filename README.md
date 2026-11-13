@@ -21,6 +21,14 @@ python3 generate.py --base https://airport-codes-world.pages.dev
 
 Generated files are written to `dist/`.
 
+> **Note on `data/airports.csv`:** the file is stored in this repository as four
+> sequential parts (`data/airports.csv.part-001` … `part-004`) because of upload
+> size limits. Reassemble it once before generating:
+>
+> ```bash
+> sh data/join_airports_csv.sh
+> ```
+
 ## Data and attribution
 
 - Airport, runway, country, and region data: [OurAirports](https://davidmegginson.github.io/ourairports-data/), released into the public domain.
